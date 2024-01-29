@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&display=swap');
+.sideBarContainer {
+    background-color: #000; 
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    top: 0;
+    text-transform: capitalize;
+    font-family: "Andada Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+span {
+    content: '';
+    border: 2px solid white;
+    width: 250px;
+}
+span::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: black;
+}
+
+
+.SideBarItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SideBarItems p {
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.SideBarItems p:hover {
+    color: #42a5f5;
+}
+
+@media (max-width: 768px) {
+    .sideBarContainer {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        position: relative; 
+        z-index: 0; 
+    }
+
+    .SideBarItems {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+}

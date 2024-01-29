@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&display=swap');
+.footer {
+    margin-top: 680px;
+    font-family: "Andada Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #000; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerHeading {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.footerContent {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footerIcons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}:hover{
+   transition: color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .footerContent {
+        padding: 10px;
+    }
+
+    .footerIcons {
+        flex-direction: column;
+    }
+
+    .footerIcons img {
+        margin: 5px 0;
+    }
+}

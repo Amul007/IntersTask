@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&display=swap');
+body{
+    font-family: "Andada Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    text-transform: capitalize;
+    
+}
+.Header {
+    height: 105px;
+    background: #eeeeee;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.listItems {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+}
+
+.listItems p {
+    margin: 0;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #f39c12;
+    }
+}
+
+.loginStart {
+    display: flex;
+    gap: 20px;
+    width: 200px;
+    @media (max-width: 768px) {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+}
+
+.loginStart p {
+    margin: 0;
+    margin-top: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 20px;
+
+    &:hover {
+        color: #f39c12;
+    }
+}
+
+.loginStart span {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 19px;
+    cursor: pointer;
+    width: 100;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e74c3c;
+    }
+}
